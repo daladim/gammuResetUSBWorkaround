@@ -1,7 +1,12 @@
 # gammuResetUSBWorkaround
-Very dirty workaround in case a USB reset causes gammu to lose contact with the USB dongle.
 
-Before Gammu can be fixed (see https://github.com/gammu/gammu/issues/198, I'd like to contribute to it as soon as I have a physical ccess to my raspberry pi), I wrote this awful workaround. It basically polls gammu log file, and reboots the computer if too many errors are detected.
+**Note** : This "tool" is deprecated. See https://github.com/gammu/gammu/issues/198 on how to not need it.
+
+
+
+
+Very dirty workaround in case a USB reset causes gammu to lose contact with the USB dongle.
+I wrote this awful workaround. It basically polls gammu log file, and reboots the computer if too many errors are detected.
 
 Please note that this will reboot the computer whenever such a problem is encountered. This may cause extra problems (is your firewall persistent? are all you services restarted at startup?), so please double check before using.
 
